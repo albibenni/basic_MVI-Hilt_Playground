@@ -18,7 +18,7 @@ constructor(): EntityMapper<BlogNetworkEntity, Blog>
         )
     }
 
-    override fun mapTOEntity(domainModel: Blog): BlogNetworkEntity {
+    override fun mapToEntity(domainModel: Blog): BlogNetworkEntity {
         return BlogNetworkEntity(
             id = domainModel.id,
             title = domainModel.title,
